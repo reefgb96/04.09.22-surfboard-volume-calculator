@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./style/style.css" />
+    <link
+      rel="shortcut icon"
+      href="https://cdn-icons-png.flaticon.com/512/4722/4722111.png"
+      type="image/x-icon"
+    />
+    <title>Surfboard Volume Calculator</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <img
+          class="logo"
+          src="https://cdn-icons-png.flaticon.com/512/4722/4722111.png"
+          alt=""
+        />
+        <h1>The Surfboard Volume Calculator</h1>
+      </nav>
+    </header>
+
+    <main>
+      <div class="calc-card">
+        <h3 class="title">find out your boards volume</h3>
+        <div class="range-group">
+          <h4 id="length-value">Length:</h4>
+          <input
+            type="range"
+            class="range slider-length range-input"
+            min="150"
+            max="300"
+            step="0.1"
+          />
+          <h4 id="width-value">Width:</h4>
+          <input
+            type="range"
+            class="range slider-width range-input"
+            min="30"
+            max="60"
+            step="0.1"
+          />
+          <h4 id="thickness-value">Thickness:</h4>
+          <input
+            type="range"
+            class="range slider-thickness range-input"
+            min="1"
+            max="12"
+            step="0.01"
+          />
+          <h4>Type:</h4>
+          <div class="check-types">
+            <h5>Shortboard</h5>
+            <h5>Hybrid/Fish</h5>
+            <h5>Funboard</h5>
+          </div>
+          <div class="check-types">
+            <input type="checkbox" class="checkbox" />
+            <input type="checkbox" class="checkbox" />
+            <input type="checkbox" class="checkbox" />
+          </div>
+          <h3 id="output-value">volume:</h3>
+        </div>
+      </div>
+    </main>
+
+    <footer></footer>
+
+    <script type="module" src="js/index.js"></script>
+  </body>
+</html>
